@@ -148,8 +148,11 @@ if __name__ == "__main__":
     vdb.sync_comments_file(consts.COMMENTS_CSV)
 
     # specify channels to scrape
-    channel_ids = ["Fox News", "MSNBC"]
-    channel_ids = map(lambda x: vdb.channelName_to_channelId(x), channel_ids)
+    channel_ids = ["UCXIJgqnII2ZOINSWNOGFThA"] # Fox News channel ID
+    
+    # once a channel is in the database, you can look it up by name
+    # channel_ids = ["Fox News", "MSNBC"]
+    # channel_ids = map(lambda x: vdb.channelName_to_channelId(x), channel_ids)
 
     # specify these parameters
     videos_per_channel = 5
