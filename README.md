@@ -6,6 +6,7 @@ Specify the channels that you wish to collect from, the number of videos to scra
 If a channel does not exist in the video database yet, you need to collect it by providing the channel ID, e.g. "UCXIJgqnII2ZOINSWNOGFThA" for Fox News. Once a channel exists in the database, you can use code like the following to convert from channel name to channel id:
 
 ```channel_ids = ["Fox News", "MSNBC"]```
+
 ```channel_ids = map(lambda x: vdb.channelName_to_channelId(x), channel_ids)```
 
 ## analysis.py
